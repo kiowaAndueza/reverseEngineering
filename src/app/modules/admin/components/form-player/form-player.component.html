@@ -1,0 +1,40 @@
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="abs-center col-md-6">
+      <form class="border p-3 shadow p-3 mb-5 bg-white rounded">
+        <div>
+          <div class="form-group mb-3">
+            <label for="name2">Name:</label>
+            <input type="text" name="name2" id="name2" value="{{playerOne.name}}" class="form-control rounded" [(ngModel)]="playerOne.name">
+          </div>
+          <div class="form-group mb-3">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="position" value="{{playerOne.age}}" class="form-control rounded" [(ngModel)]="playerOne.age">
+          </div>
+          <div class="form-group mb-3">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" value="{{playerOne.phone}}" class="form-control rounded" [(ngModel)]="playerOne.phone">
+          </div>
+          <div class="form-group mb-3">
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" value="{{playerOne.email}}" class="form-control rounded" [(ngModel)]="playerOne.email">
+          </div>
+          <div class="form-group mb-3">
+            <label for="position">Position:</label>
+            <input type="text" name="position" id="position" value="{{playerOne.position}}" class="form-control rounded" [(ngModel)]="playerOne.position">
+          </div>
+          <div class="form-group mb-3">
+            <label for="goals">Goals:</label>
+            <input type="number" name="goals" id="goals" value="{{playerOne.goals}}" class="form-control rounded" [(ngModel)]="playerOne.goals">
+          </div>
+          <div class="form-group mb-3">
+            <label for="assists">Assists:</label>
+            <input type="number" name="assists" id="assists" value="{{playerOne.assists}}" class="form-control rounded" [(ngModel)]="playerOne.assists">
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-danger mt-2 mx-1" (click)="cancel()">Cancel</button>
+          <button class="btn btn-success mt-2" (click)="updatePlayer()" >Save</button>
+        </div>
+      </form>
+    </div>
+  </div>

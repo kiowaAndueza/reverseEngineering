@@ -1,0 +1,36 @@
+<div class="container pt-5 pb-5">
+    <div class="col-12">
+        <div class="d-flex flex-wrap justify-content-between" style="margin-bottom: 10em;">
+            <div class="card shadow mt-2 mb-5" *ngIf="id" style="margin-bottom: 40em;">
+                <div class="card-body" style="min-width: 82em; max-width: 82em;">
+                    <h5 class="card-title">{{this.playerOne.name}}</h5>
+                    <div class="card-text">
+                        <div>Age: {{playerOne.age}}</div>
+                        <div>Number: {{playerOne.id}}</div>
+                        <div>Position: {{playerOne.position}}</div>
+                        <div>Goals: {{playerOne.goals}}</div>
+                        <div>Assists: {{playerOne.assists}}</div>
+                    </div>
+                </div>
+            </div>
+            <div *ngFor="let player of players">
+                <div class="card shadow mt-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card-body col-6"  style="min-width: 30em; max-width: 30em;">
+                                <h5 class="card-title">{{player.name}}</h5>
+                                <div class="card-text">
+                                    <div>Age: {{player.age}}</div>
+                                    <div>Number: {{player.id}}</div>
+                                    <div>Position: {{player.position}}</div>
+                                    <div>Goals: {{player.goals}}</div>
+                                    <div>Assists: {{player.assists}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

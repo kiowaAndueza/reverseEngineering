@@ -1,0 +1,20 @@
+<div class="container pt-5 pb-5">
+    <div class="col-12 mx-3">
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="card shadow mt-2" *ngFor="let player of players">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card-body col-6"  style="min-width: 30em; max-width: 30em;">
+                            <h5 class="card-title">{{player.name}}</h5>
+                            <p class="card-text">Position: {{player.position}}</p>
+                            <div class="d-flex justify-content-end">
+                                <a class="btn btn-info mx-1" (click)="redirectToAbout(player)">About</a>
+                                <a class="btn btn btn-warning" (click)="edit(player)">Edit</a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

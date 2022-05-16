@@ -1,0 +1,28 @@
+<div class="container pt-5 pb-5">
+    <div class="col-12">
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="card shadow mt-2" *ngIf="id" style="margin-bottom: 17em;">
+                <div class="card-body" style="min-width: 40em; max-width: 40em;">
+                    <h5 class="card-title">{{this.playerOne.name}}</h5>
+                    <div class="card-text">
+                        <div>Phone: +{{this.playerOne.phone}}</div>
+                        <div>E-mail: {{this.playerOne.email}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow mt-2" *ngFor="let player of players">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card-body col-6"  style="min-width: 30em; max-width: 30em;">
+                            <h5 class="card-title">{{player.name}}</h5>
+                            <div class="card-text">
+                                <div>Phone: +{{player.phone}}</div>
+                                <div>E-mail: {{player.email}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

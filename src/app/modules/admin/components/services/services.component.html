@@ -1,0 +1,28 @@
+<div class="container pt-5 pb-5">
+    <div class="col-12">
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="card shadow mt-5" *ngFor="let player of players">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-body col-6"  style="min-width: 60em; max-width: 60em;">
+                            <h5 class="card-title">{{player.name}}</h5>
+                            <div class="card-text">
+                                <div>Age: {{player.age}}</div>
+                                <div>Number: {{player.id}}</div>
+                                <div>Position: {{player.position}}</div>
+                                <div>Goals: {{player.goals}}</div>
+                                <div>Assists: {{player.assists}}</div>
+                                <div>Phone: +{{player.phone}}</div>
+                                <div>E-mail: {{player.email}}</div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <a class="btn btn-danger mx-1" (click)="deletePlayer(player)">Delete</a>
+                                <a class="btn btn btn-warning" (click)="editPlayer(player)">Edit</a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
