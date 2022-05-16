@@ -1,3 +1,13 @@
+# IngenieriaInversa functions
+This application has two different roles: administrator and user.
+To log in as a user:
+- email: "user@gmail.com"
+- password: "userdaw2"
+To log in as administrator:
+- email: "admin@gmail.com"
+- password: "admindaw2"
+The views of each role are protected by guards. Admin can view, update and delete users. He can also see all his data, including the contact details of each player. The user can only see general data but not the personal data of each player.
+
 # IngenieriaInversa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
