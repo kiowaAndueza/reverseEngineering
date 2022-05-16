@@ -8,7 +8,7 @@ import { API } from 'src/environments/api-route';
   providedIn: 'root'
 })
 export class PlayerService {
-  private readonly apiUrl: string = API.base
+  private apiUrl: string = API.base
   constructor(private http: HttpClient) { }
 
   getPlayers(): Observable<Player[]> {

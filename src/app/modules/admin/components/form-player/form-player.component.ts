@@ -27,15 +27,6 @@ export class FormPlayerComponent implements OnInit {
   }
 
 
-  createOrUpdate(){
-    if(this.id){
-      this.updatePlayer();
-    } else {
-      console.log(this.playerOne);
-      this.createPlayer();
-    }
-  }
-
 
   getPlayer(){
     this.playerService.getPlayer(this.id).subscribe(data =>{
@@ -53,6 +44,8 @@ export class FormPlayerComponent implements OnInit {
     });
     this.router.navigate(['admin/services']);
   }
+
+
 
   createPlayer(){
     this.playerService.create(this.playerOne).subscribe({

@@ -37,16 +37,4 @@ export class AuthService {
     return throwError(new Error('Failed to login'));
   }
 
-  haveRoleAccess(menuName: any){
-    const role = localStorage.getItem("role");
-    if(role == 'admin'){
-      return true;
-    } else {
-      if(menuName=='user'){
-        return true;
-      } else {
-        return false;
-      }
-    }
-  }
 }
